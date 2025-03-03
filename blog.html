@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="blog-hero">
+            <h1 class="animated-heading">My Blog</h1>
+            <p>Explore my insights on design, creativity, and beyond.</p>
+        </section>
+
+        <!-- Blog Grid -->
+        <section class="blog-grid">
+            <div class="blog-card">
+                <img src="images/code-820275_1280.jpg" alt="Web Design Tips">
+                <h2>5 Tips for Stunning Web Design</h2>
+                <p>Discover the essential elements of creating beautiful, responsive websites...</p>
+                <button class="btn toggle-content">Read More</button>
+                <div class="blog-content">
+                    <p>Web design is an ever-evolving field. Here are 5 essential tips to make your website stand out:
+                    </p>
+                    <ul>
+                        <li>Focus on simplicity and clarity.</li>
+                        <li>Prioritize responsive design for mobile users.</li>
+                        <li>Use a cohesive color palette.</li>
+                        <li>Optimize your website for speed.</li>
+                        <li>Ensure accessibility for all users.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="images/communication-2805785_1280.jpg" alt="Logo Design Process">
+                <h2>The Creative Process Behind Logo Design</h2>
+                <p>A deep dive into the steps that bring a brand's identity to life...</p>
+                <button class="btn toggle-content">Read More</button>
+                <div class="blog-content">
+                    <p>A logo is more than just a visual mark; it's the face of a brand. Here’s a look into the creative
+                        process:</p>
+                    <ul>
+                        <li>Understanding the brand's mission and values.</li>
+                        <li>Researching industry trends and competitors.</li>
+                        <li>Sketching initial ideas and concepts.</li>
+                        <li>Refining the chosen design using digital tools.</li>
+                        <li>Testing the logo across different mediums.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="images/home-office-4996834_1280.jpg" alt="Creative Tools">
+                <h2>Creative Tools Every Designer Should Know</h2>
+                <p>From prototyping to photo editing, discover the essential tools...</p>
+                <button class="btn toggle-content">Read More</button>
+                <div class="blog-content">
+                    <p>In the digital era, having the right tools can make all the difference for designers. Here are my
+                        top picks:</p>
+                    <ul>
+                        <li>Adobe Creative Suite (Photoshop, Illustrator, XD).</li>
+                        <li>Figma for collaborative prototyping.</li>
+                        <li>Canva for quick, high-quality designs.</li>
+                        <li>InVision for interactive mockups.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kailey Schinstock. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Expand or collapse blog content
+        document.querySelectorAll('.toggle-content').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                button.textContent = content.style.display === 'block' ? 'Read Less' : 'Read More';
+            });
+        });
+    </script>
+</body>
+
+</html>

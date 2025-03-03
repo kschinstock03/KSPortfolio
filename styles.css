@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #a678d6, #e09edc);
+    padding: 1rem 0;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 1rem;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: #e6d5e1;
+    color: #333;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.gallery-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 300px;
+    /* Change to your desired size */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+
+.project-link {
+    display: inline-block;
+    background: #a678d6;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Carousel Container */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 2rem auto;
+}
+
+/* Carousel Track */
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Carousel Items */
+.carousel-item {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Carousel Buttons */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: white;
+}

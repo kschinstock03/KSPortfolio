@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <h1 class="animated-heading">About Me</h1>
+            <p>Learn more about the creative mind behind the designs.</p>
+        </section>
+
+        <!-- Profile Section -->
+        <section class="profile">
+            <div class="profile-container">
+                <img src="images/IMG_1891.JPG" alt="Your Photo">
+                <div class="profile-text">
+                    <h2>Hi, I'm Kailey!</h2>
+                    <p>
+                        I’m a passionate Graphic Communications major with a focus on web and graphic design. My mission
+                        is to craft visually stunning and user-friendly digital experiences that help brands connect
+                        with their audience.
+                    </p>
+                    <p>
+                        With a love for creative problem-solving and attention to detail, I excel at turning ideas into
+                        designs that make a lasting impact.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>My Skills</h2>
+            <div class="skill">
+                <h3>Web Design</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-skill-level="85"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Graphic Design</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-skill-level="90"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Prototyping</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-skill-level="75"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fun Facts or Achievements Section -->
+        <section class="fun-facts">
+            <h2>Fun Facts & Achievements</h2>
+            <ul>
+                <li>I'm a proud Furmom to a very spoiled dog and cat.</li>
+                <li>I enjoy creating websites and other graphic things.</li>
+                <li>I love to play slow pitch softball on my free time.</li>
+                <li>I qualified for State FBLA in Computer Science all 4 years of highschool.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kailey Schinstock. All rights reserved.</p>
+    </footer>
+    <script>
+        // Progress bar animation
+        document.addEventListener("DOMContentLoaded", () => {
+            const progressBars = document.querySelectorAll(".progress");
+            progressBars.forEach(bar => {
+                const skillLevel = bar.getAttribute("data-skill-level");
+                bar.style.width = `${skillLevel}%`;
+            });
+        });
+    </script>
+</body>
+
+</html>
